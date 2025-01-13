@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartEZ App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdown');
+            dropdown.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="flex justify-between items-center p-8 bg-gray-800 text-white">
+        <div class="flex items-center space-x-4">
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">INICIO</a></li>
+                    <li><a href="#" class="hover:text-gray-300">SERVICIOS</a></li>
+                    <li><a href="#" class="hover:text-gray-300">SOBRE NOSOTROS</a></li>
+                </ul>
+            </nav>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">INICIAR SESIÓN</a></li>
+                <li><a href="#" class="hover:text-gray-300">REGISTRARSE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex flex-1">
+        <aside class="w-1/4 bg-gray-700 text-white p-8">
+            <ul class="space-y-6 text-lg">
+                <li><a href="#" class="hover:text-gray-300">Crear una rutina de encendido y apagado.</a></li>
+                <li><a href="#" class="hover:text-gray-300">Ajustar el consumo energético.</a></li>
+                <li><a href="#" class="hover:text-gray-300">Notificaciones</a></li>
+                <li><a href="#" class="hover:text-gray-300">Perfil</a></li>
+                <li>
+                    <button onclick="toggleDropdown()" class="hover:text-gray-300 flex items-center">
+                        Configuracion
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <ul id="dropdown" class="hidden space-y-4 mt-2 ml-4">
+                        <li><a href="#" class="hover:text-gray-300">Configuracion de horarios</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Configuracion de temperatura y clima</a></li>
+                        <li><a href="#" class="hover:text-gray-300">Modos especiales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main class="w-3/4 p-8 bg-gray-50 overflow-auto">
+            <h1 class="text-2xl font-bold mb-4">Añadir dispositivos</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+                <div class="border p-4 rounded-lg shadow-lg flex items-center justify-center h-48">
+                    <button class="bg-blue-500 text-white text-4xl w-16 h-16 rounded-full hover:bg-blue-700">+</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bg-gray-800 text-white flex justify-center items-center h-24">
+        <p>&copy; 2025 SmartEZ Landing App</p>
+    </footer>
+</body>
+</html>
